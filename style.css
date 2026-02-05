@@ -1,4 +1,4 @@
-{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-page {
+.page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,12 +29,12 @@ header h1 {
     margin-bottom: 4px;
 }
 
-subtitle {
+.subtitle {
     font-size: 14px;
     color: #6b7280;
 }
 
-container {
+.container {
     width: 100%;
     max-width: 760px;
 }
@@ -56,7 +56,7 @@ profile-card {
     align-items: center;
 }
 
-avatar {
+.avatar {
     width: 96px;
     height: 96px;
     border-radius: 999px;
@@ -125,7 +125,7 @@ tag-list {
     margin-top: 6px;
 }
 
-tag {
+.tag {
     font-size: 12px;
     padding: 4px 10px;
     border-radius: 999px;
@@ -140,4 +140,5 @@ footer {
     font-size: 12px;
     color: #9ca3af;
 }
+
 
