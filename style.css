@@ -39,8 +39,8 @@ header h1 {
     max-width: 760px;
 }
 
-profile-card,
-section-card {
+.profile-card,
+.section-card {
     background-color: #ffffff;
     border-radius: 16px;
     padding: 24px 24px 20px;
@@ -49,7 +49,7 @@ section-card {
     border: 1px solid #e5e7eb;
 }
 
-profile-card {
+.profile-card {
     display: grid;
     grid-template-columns: 110px 1fr;
     gap: 20px;
@@ -70,54 +70,54 @@ profile-card {
     box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
 }
 
-profile-right h2 {
+.profile-right h2 {
     font-size: 22px;
     margin-bottom: 4px;
 }
 
-profile-role {
+.profile-role {
     font-size: 14px;
     color: #6b7280;
     margin-bottom: 8px;
 }
 
-profile-summary {
+.profile-summary {
     font-size: 14px;
     margin-bottom: 14px;
 }
 
-info-grid {
+.info-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px 16px;
 }
 
-info-item {
+.info-item {
     display: flex;
     flex-direction: column;
     font-size: 13px;
 }
 
-info-label {
+.info-label {
     color: #9ca3af;
     margin-bottom: 2px;
 }
 
-info-value {
+.info-value {
     font-weight: 500;
 }
 
-section-card h3 {
+.section-card h3 {
     font-size: 18px;
     margin-bottom: 8px;
 }
 
-section-card p {
+.section-card p {
     font-size: 14px;
     color: #374151;
 }
 
-tag-list {
+.tag-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -140,5 +140,3 @@ footer {
     font-size: 12px;
     color: #9ca3af;
 }
-
-
