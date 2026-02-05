@@ -1,87 +1,142 @@
-<!DOCTYPE html>
-<html lang+"ko">
-<head>
-    <meta charset="UTF-8">
-    <title>정광혁 자기소개 홈페이지</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="page">
-        <header class="header">
-            <h1>정광혁 자기소개</h1>
-            <p class="subtitle">카드형태 스타일 간단 포트폴리오</p>
-        </header>
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        <main class="container">
-            <section class="profile-card">
-                <div class="profile-left">
-                    <div class="avatar">
-                        <span>HG</span>
-                    </div>
-                </div>
-                <div class="profile-right">
-                    <h2>정광혁</h2>
-                    <p class="profile-role">메카트로닉스공학 전공 대학생</p>
-                    <p class="profile-summary">
-                        안녕하세요, 20살 메카트로닉스공학 전공 정광혁입니다.
-                        새로운 기술을 배우는 것을 좋아하고, 프로그래밍 실력을 키우기 위해 꾸준히 공부하고 있습니다.
-                    </p>
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f7;
+    color: #111827;
+    line-height: 1.6;
+}
 
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <span class="info-label">나이</span>
-                            <span class="info-value">20살</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">전공</span>
-                            <span class="info-value">메카트로닉스공학</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">취미</span>
-                            <span class="info-value">축구보기</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">특기</span>
-                            <span class="info-value">프로그래밍</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+}
 
-            <section class="section-card">
-                <h3>About Me</h3>
-                <p>
-                    저는 문제를 해결하는 과정을 좋아합니다. 특히 프로그래밍을 통해
-                    복잡한 문제를 코드로 풀어보는 것에 큰 흥미를 느끼고 있습니다.
-                    팀 프로젝트를 통해 다른 사람들과 협업하는 경험도 계속해서 쌓고 있습니다.
-                </p>
-            </section>
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
 
-            <section class="section-card">
-                <h3>관심 분야</h3>
-                <ul class="tag-list">
-                    <li class="tag">웹 개발</li>
-                    <li class="tag">알고리즘 공부</li>
-                    <li class="tag">인공지능 기초</li>
-                    <li class="tag">리눅스 / 개발환경 설정</li>
-                </ul>
-            </section>
+header h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
 
-            <section class="section-card">
-                <h3>축구와 프로그래밍</h3>
-                <p>
-                    축구는 제개 큰 힐링 시간이면서도, 동시에 생각을 정리하는 시간이 됩니다.
-                    팀이 이기면, 마치 어려운 버그를 해결했을 때처럼
-                    성취감을 느낄 수 있습니다.
-                    이런 경험이 프로그래밍을 할 떄에도 끈기를 가지고 문제를 끝까지 해결하는데
-                    많은 도움이 된다고 생각합니다.
-                </p>
-            </section>
+subtitle {
+    font-size: 14px;
+    color: #6b7280;
+}
 
-            <footer class="footer">
-                <p>@ 2026 J GW H ● personal Intro page</p>
-            </footer>
-        </main>
-    </div>
-</body>
-</html>
+container {
+    width: 100%;
+    max-width: 760px;
+}
+
+profile-card,
+section-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px 24px 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e5e7eb;
+}
+
+profile-card {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9fafb;
+    font-size: 32px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
+}
+
+profile-right h2 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+profile-role {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+profile-summary {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 16px;
+}
+
+info-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+info-label {
+    color: #9ca3af;
+    margin-bottom: 2px;
+}
+
+info-value {
+    font-weight: 500;
+}
+
+section-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+section-card p {
+    font-size: 14px;
+    color: #374151;
+}
+
+tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background-color: #eef2ff;
+    color: #4338ca;
+    border: 1px solid #e0e7ff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #9ca3af;
+}
